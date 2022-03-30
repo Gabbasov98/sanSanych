@@ -129,13 +129,13 @@ $(document).ready(function() {
 
         canvas.addEventListener('touchstart', function(e) {
             canvasClick(e)
-        });
+        }, false);
         canvas.addEventListener('touchmove', function(e) {
             canvasLeave(e)
-        });
+        }, false);
         canvas.addEventListener('touchend', function(e) {
             canvasUnClick(e)
-        });
+        }, false);
 
         canvas.addEventListener('mousedown', function(e) {
             canvasClick(e)
