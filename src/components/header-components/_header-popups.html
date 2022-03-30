@@ -1,0 +1,244 @@
+<!-- Modal -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display3">Заказать обратный звонок</h3>
+            <form action="" class="modal__form">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Ваше имя" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='tel' placeholder="Номер телефона*" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <textarea placeholder="Комментарий"></textarea>
+                </fieldset>
+                <button class="modal__form-btn btn btn-primary">Жду звонка</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade call-modal" id="callModal2" tabindex="-1" aria-labelledby="callModal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display4">Мы позвоним вам в рабочее время</h3>
+            <div class="call-modal__times">
+                <div class="call-modal__time">
+                    <span class="call-modal__time-hour display3">9:00–20:00</span>
+                </div>
+                <div class="call-modal__time">
+                    <span class="call-modal__time-day">Cуббота</span>
+                    <span class="call-modal__time-hour display3">10:00–20:00</span>
+                </div>
+                <div class="call-modal__time">
+                    <span class="call-modal__time-day">Воскресенье</span>
+                    <span class="call-modal__time-hour display3">10:00–18:00</span>
+                </div>
+            </div>
+            <button class="call-modal__btn btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Вход в личный кабинет</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Электронная почта" />
+                        </fieldset>
+                        <fieldset class='form-group'>
+                            <input type='password' placeholder="Пароль" />
+                        </fieldset>
+                        <div class="login-modal__nav">
+                            <div class="login-modal__wrap">
+                                <div class="login-modal__check check">
+                                    <input type='checkbox' class='checkbox' id='login' />
+                                    <label for='login'>Запомнить меня</label>
+                                </div>
+                                <button type="button" class="login-modal__text-btn text-btn" data-bs-toggle="modal" data-bs-target="#forgotModal">Напомнить пароль</button>
+                            </div>
+                            <button class="login-modal__btn modal__form-btn btn btn-primary">Войти</button>
+                        </div>
+                    </form>
+                    <div class="login-modal__or">
+                        <span>Или</span>
+                    </div>
+                    <button class="login-modal__reg text-btn btn" data-bs-toggle="modal" data-bs-target="#regModal">Зарегистрироваться</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        @@include('_modal-socials.html')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Регистрация</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Ваше имя*" />
+                        </fieldset>
+                        <fieldset class='form-group'>
+                            <input type='text' placeholder="Фамилия" />
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            <input type='email' placeholder="Электронная почта" />
+                            <div class="form-group__error">
+                                <span class="form-group__error-icon btn">!</span>
+                                <span class="form-group__error-text">Введите коректный адрес электронной почты</span>
+                            </div>
+                        </fieldset>
+                        <fieldset class='form-group form-group--error'>
+                            <input type='password' placeholder="Пароль*" />
+                            <div class="form-group__error">
+                                <span class="form-group__error-icon btn">!</span>
+                                <span class="form-group__error-text">Обязательное поле для заполнения</span>
+                            </div>
+                        </fieldset>
+                        <div class="login-modal__nav">
+                            <div class="login-modal__wrap">
+                                <div class="login-modal__check check">
+                                    <input type='checkbox' class='checkbox' id='reg' />
+                                    <label for='reg'>
+                                        <a href="" class="text-btn">Соглашение о конфиденциальности</a> предоставляемой и собираемой информации
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="login-modal__btn modal__form-btn btn btn-primary">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <div class="login-modal__or">
+                        <span>Или</span>
+                    </div>
+                    <button class="login-modal__reg text-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Войти через электронную почту</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        @@include('_modal-socials.html')
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade login-modal" id="forgotModal" tabindex="-1" aria-labelledby="forgotModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="login-modal__left">
+                <div class="login-modal__form-block">
+                    <h3 class="modal__title display3">Вход в личный кабинет</h3>
+                    <form action="" class="modal__form">
+                        <fieldset class='form-group'>
+                            <input type='email' placeholder="Электронная почта" />
+                        </fieldset>
+                        <button class="lmodal__form-btn modal__form-btn btn btn-primary">Востановить пароль</button>
+                    </form>
+                    <button class="login-modal__remember text-btn btn" data-bs-toggle="modal" data-bs-target="#loginModal">Я вспомнил свой пароль</button>
+                </div>
+            </div>
+            <div class="login-modal__right">
+                <div class="login-modal__socials">
+                    <p class="login-modal__socials-title modal__title display3">Войти через:</p>
+                    <div class="login-modal__socials-items">
+                        @@include('_modal-socials.html')
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade calc-modal" id="calcModal" tabindex="-1" aria-labelledby="calcModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display3">Запросить расчёт</h3>
+            <form action="" class="modal__form calc-modal__form">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Ваше имя" />
+                </fieldset>
+
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Электронная почта*" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='tel' placeholder="Номер телефона*" />
+                </fieldset>
+
+                <fieldset class='form-group calc-modal__text'>
+                    <textarea placeholder="Описание"></textarea>
+                </fieldset>
+                <div class="calc-modal__file file-input">
+                    <input type="file">
+                    <label for="">
+                        <span>Добавить файлы</span>
+                        <span class="text-btn">Загрузить</span>
+                    </label>
+                </div>
+                <div class="calc-modal__check check calc-modal__full">
+                    <input type='checkbox' class='checkbox' id='calcCheck' />
+                    <label for='calcCheck'>
+                        <a href="" class="text-btn">Соглашение о конфиденциальности</a> предоставляемой и собираемой информации
+                    </label>
+                </div>
+                <button class="calc-modal__btn btn btn-primary calc-modal__full">Отправить запрос на расчёт</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->

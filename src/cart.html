@@ -1,0 +1,369 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Корзина", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <span class="breadcrumbs__item">Корзина</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='cart'>
+                <div class='container'>
+                    <div class='cart__inner'>
+                        <div class="cart__left">
+                            <div class="cart__nav">
+                                <h3 class="cart__title display3">
+                                    Корзина
+                                    <span> (3)</span>
+                                </h3>
+
+
+                                <div class="cart__nav-buttons">
+                                    <button class="cart__clear btn">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 4H3.33333H14" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.66797 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.33203 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Очистить корзину</span>
+                                    </button>
+                                    <button class="cart__share btn" data-bs-toggle="modal" data-bs-target="#cartModal">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_3677_37436)">
+                                            <path d="M11.3307 5.77816C12.2512 5.77816 12.9974 5.03197 12.9974 4.11149C12.9974 3.19102 12.2512 2.44482 11.3307 2.44482C10.4103 2.44482 9.66406 3.19102 9.66406 4.11149C9.66406 5.03197 10.4103 5.77816 11.3307 5.77816Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.66667 9.66683C5.58714 9.66683 6.33333 8.92064 6.33333 8.00016C6.33333 7.07969 5.58714 6.3335 4.66667 6.3335C3.74619 6.3335 3 7.07969 3 8.00016C3 8.92064 3.74619 9.66683 4.66667 9.66683Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.3307 13.5555C12.2512 13.5555 12.9974 12.8093 12.9974 11.8888C12.9974 10.9684 12.2512 10.2222 11.3307 10.2222C10.4103 10.2222 9.66406 10.9684 9.66406 11.8888C9.66406 12.8093 10.4103 13.5555 11.3307 13.5555Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.10547 8.83887L9.89991 11.05" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.89436 4.9502L6.10547 7.16131" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3677_37436">
+                                            <rect width="13.3333" height="13.3333" fill="white" transform="translate(1.33203 1.3335)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <span>Поделиться корзиной</span>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="cart__items">
+
+                                <div class="cart-card">
+                                    <div class="cart-card__product">
+                                        <div class="cart-card__left">
+                                            <a href="" class="cart-card__img">
+                                                <img src="img/cart4.webp" alt="">
+                                            </a>
+                                            <div class="cart-card__info">
+                                                <a href="" class="cart-card__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</a>
+                                                <div class="cart-card__code copy-code">
+                                                    Код: <span> 22283</span>
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-card__color">Белый</div>
+                                        <div class="cart-card__right">
+
+                                            <div class="cart-card__calc cartcalc">
+                                                <button class="ccalc-minus ccalc-minus--disable">
+                                                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2H14" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" value="1">
+                                                <button class="ccalc-plus">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 14V2M14 8L2 8" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="cart-card__prices">
+
+                                                <div class="cart-card__sale">
+                                                    <span class="cart-card__sale-price">33 414</span>
+                                                    <span class="cart-card__sale-percent">–20%</span>
+                                                </div>
+
+                                                <div class="cart-card__price  cart-card__price--red ">
+                                                    23 390 ₽
+                                                    <span>/ шт</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="cart-card__bottom">
+                                            <div class="cart-card__action">
+                                                <button class="cart-card__favourite cart-card__btn btn">
+                                                    <i></i>
+                                                    <span>В избранное</span>
+                                                </button>
+                                                <button class="cart-card__btn btn">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 4H3.33333H14" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.66797 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.33203 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>Удалить товар</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-card__set">
+                                        <div class="cart-set">
+                                            <div class="cart-set__title">Состав комплетка</div>
+                                            <div class="cart-set__item">
+                                                <a href="" class="cart-set__left">
+                                                    <div class="cart-set__img">
+                                                        <img src="img/cart4.webp" alt="">
+                                                    </div>
+                                                    <div class="cart-set__item-title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</div>
+                                                </a>
+                                                <span class="cart-set__price">1274 ₽</span>
+                                            </div>
+                                            <div class="cart-set__item">
+                                                <a href="" class="cart-set__left">
+                                                    <div class="cart-set__img">
+                                                        <img src="img/cart2.webp" alt="">
+                                                    </div>
+                                                    <div class="cart-set__item-title">Кран шаровый со сгоном Tiemme Buran 3/4" (черная бабочка) (2450005)</div>
+                                                </a>
+                                                <span class="cart-set__price">1274 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cart-card">
+                                    <div class="cart-card__product">
+                                        <div class="cart-card__left">
+                                            <a href="" class="cart-card__img">
+                                                <img src="img/cart4.webp" alt="">
+                                            </a>
+                                            <div class="cart-card__info">
+                                                <a href="" class="cart-card__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</a>
+                                                <div class="cart-card__code copy-code">
+                                                    Код: <span> 22283</span>
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="cart-card__color">Белый</div>
+                                        <div class="cart-card__right">
+
+                                            <div class="cart-card__calc cartcalc">
+                                                <button class="ccalc-minus ccalc-minus--disable">
+                                                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2H14" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" value="1">
+                                                <button class="ccalc-plus">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 14V2M14 8L2 8" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="cart-card__prices">
+
+                                                <div class="cart-card__sale">
+                                                    <span class="cart-card__sale-price">33 414</span>
+                                                    <span class="cart-card__sale-percent">–20%</span>
+                                                </div>
+
+                                                <div class="cart-card__price  cart-card__price--red ">
+                                                    23 390 ₽
+                                                    <span>/ шт</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="cart-card__bottom">
+                                            <div class="cart-card__action">
+                                                <button class="cart-card__favourite cart-card__btn btn">
+                                                    <i></i>
+                                                    <span>В избранное</span>
+                                                </button>
+                                                <button class="cart-card__btn btn">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 4H3.33333H14" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.66797 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.33203 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>Удалить товар</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cart-card">
+                                    <div class="cart-card__product">
+                                        <div class="cart-card__left">
+                                            <a href="" class="cart-card__img">
+                                                <img src="img/cart4.webp" alt="">
+                                            </a>
+                                            <div class="cart-card__info">
+                                                <a href="" class="cart-card__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</a>
+                                                <div class="cart-card__code copy-code">
+                                                    Код: <span> 22283</span>
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="cart-card__color">Белый</div>
+                                        <div class="cart-card__right">
+
+                                            <div class="cart-card__calc cartcalc">
+                                                <button class="ccalc-minus ccalc-minus--disable">
+                                                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2H14" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" value="1">
+                                                <button class="ccalc-plus">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M8 14V2M14 8L2 8" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="cart-card__prices">
+
+                                                <div class="cart-card__sale">
+                                                    <span class="cart-card__sale-price">33 414</span>
+                                                    <span class="cart-card__sale-percent">–20%</span>
+                                                </div>
+
+                                                <div class="cart-card__price  cart-card__price--red ">
+                                                    23 390 ₽
+                                                    <span>/ шт</span>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="cart-card__bottom">
+                                            <div class="cart-card__hint">
+                                                <img src="img/has-grey.svg" alt="">
+                                                <span>Этот товар доступен под заказ. </span>
+                                                <a href="">Подробнее</a>
+                                            </div>
+                                            <div class="cart-card__action">
+                                                <button class="cart-card__favourite cart-card__btn btn">
+                                                    <i></i>
+                                                    <span>В избранное</span>
+                                                </button>
+                                                <button class="cart-card__btn btn">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 4H3.33333H14" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M6.66797 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <path d="M9.33203 7.3335V11.3335" stroke="#7C7C7C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                    <span>Удалить товар</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart__right">
+                            <div class="cart-info">
+                                <div class="cart-info__code form-group">
+                                    <input type="text" placeholder="Промокод">
+                                    <button class="cart-info__code-btn btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.00035 2.63672V15.364M2.63672 9.00035H15.364" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="cart-info__items">
+                                    <div class="cart-info__item">
+                                        <span class="cart-info__title">4 товара</span>
+                                        <span class="cart-info__desc">26 414 ₽</span>
+                                    </div>
+                                    <div class="cart-info__item">
+                                        <span class="cart-info__title">Скидка</span>
+                                        <span class="cart-info__desc cart-info__desc--red">–7 239 ₽</span>
+                                    </div>
+                                    <div class="cart-info__item">
+                                        <span class="cart-info__title">Доставка</span>
+                                        <span class="cart-info__desc">450 ₽</span>
+                                    </div>
+                                    <div class="cart-info__item cart-info__item--big">
+                                        <span class="cart-info__title">К оплате</span>
+                                        <span class="cart-info__desc cart-info__desc--big">20 240 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="cart-info__btn btn btn-primary">Оформить</button>
+                            </div>
+                            <div class="cart-offer">
+                                <div class="cart-offer__title">
+                                    Купите ещё на <span>210 ₽</span> и получите:
+                                </div>
+                                <div class="cart-offer__item">
+                                    <div class="cart-offer__icon btn">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15 9V16.5H3V9" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16.5 5.25H1.5V9H16.5V5.25Z" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 16.5V5.25" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 5.25H5.625C5.12772 5.25 4.65081 5.05246 4.29917 4.70083C3.94754 4.34919 3.75 3.87228 3.75 3.375C3.75 2.87772 3.94754 2.40081 4.29917 2.04917C4.65081 1.69754 5.12772 1.5 5.625 1.5C8.25 1.5 9 5.25 9 5.25Z" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 5.25H12.375C12.8723 5.25 13.3492 5.05246 13.7008 4.70083C14.0525 4.34919 14.25 3.87228 14.25 3.375C14.25 2.87772 14.0525 2.40081 13.7008 2.04917C13.3492 1.69754 12.8723 1.5 12.375 1.5C9.75 1.5 9 5.25 9 5.25Z" stroke="#FF6C00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>Бесплатную доставку</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

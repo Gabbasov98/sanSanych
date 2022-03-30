@@ -1,0 +1,389 @@
+<button class="filter-btn btn btn-primary">Фильтр</button>
+<div class="filter">
+    <button class="filter__close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Категории</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__links">
+                <a href="" class="filter__link">Инженерная сантехника</a>
+            </div>
+            <div class="filter__links2">
+                <a href="" class="filter__link">Запорная арматура</a>
+            </div>
+            <div class="filter__links3">
+                <a href="" class="filter__link">Запорная арматура для воды (под медь)</a>
+                <a href="" class="filter__link">Запорная арматура для воды (м.п. пресс)</a>
+                <a href="" class="filter__link">Запорная арматура для воды (под сварку)</a>
+                <a href="" class="filter__link filter__link--active">Запорная арматура для воды (резьба)</a>
+                <a href="" class="filter__link">Запорная арматура для воды (фланцевая)</a>
+                <a href="" class="filter__link">Запорная арматура для газа</a>
+                <a href="" class="filter__link">Запорная арматура для подключения бытовой техники</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Забрать в магазине</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='shop1' />
+                <label for='shop1'>ул. Ленсовета, 22</label>
+            </div>
+            <div class="filter__check check">
+                <input checked type='checkbox' class='checkbox' id='shop2' />
+                <label for='shop2'>ул. Луначарского, 5</label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='shop3' />
+                <label for='shop3'>ул. Таллинская, 7</label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='shop4' />
+                <label for='shop4'>ул. Стахановцев, 10</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Бренд</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input checked type='checkbox' class='checkbox' id='brand1' />
+                <label for='brand1'>
+                    AM.PM
+                    <span>(15)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='brand2' />
+                <label for='brand2'>
+                    AQUANET
+                    <span>(9)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input disabled type='checkbox' class='checkbox' id='brand3' />
+                <label for='brand3'>
+                    BELBAGNO
+                    <span>(0)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='brand4' />
+                <label for='brand4'>
+                    CERSANIT 
+                    <span>(2)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='brand5' />
+                <label for='brand5'>
+                    CEZARES
+                    <span>(1)</span>
+                </label>
+            </div>
+            <div class="filter__check filter__check--hidden check">
+                <input type='checkbox' class='checkbox' id='brand6' />
+                <label for='brand6'>
+                    CEZARES
+                    <span>(1)</span>
+                </label>
+            </div>
+            <div class="filter__check filter__check--hidden check">
+                <input type='checkbox' class='checkbox' id='brand7' />
+                <label for='brand7'>
+                    CEZARES
+                    <span>(1)</span>
+                </label>
+            </div>
+            <button class="filter__check-all text-btn">
+                <span class="filter__check-all-show">Показать все</span>
+                <span class="filter__check-all-hide">Скрыть</span>
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Цена</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__slider range-slider__wrap" data-slider-min="0" data-slider-max="100000">
+                <div class="filter__slider-inputs">
+                    <input class="range-slider__input1" value="3200" min="0" max="999999" type="number">
+                    <span>—</span>
+                    <input class="range-slider__input2" value="75000" min="0" max="999999" type="number">
+                </div>
+                <div class="range-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Тип выпуска</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='type1' />
+                <label for='type1'>
+                    Горизонтальный
+                    <span>(207)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='type2' />
+                <label for='type2'>
+                    Горизонтальный
+                    <span>(3)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Длина (мм)</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__slider range-slider__wrap" data-slider-min="0" data-slider-max="5600">
+                <div class="filter__slider-inputs">
+                    <input class="range-slider__input1" value="3200" min="0" max="999999" type="number">
+                    <span>—</span>
+                    <input class="range-slider__input2" value="75000" min="0" max="999999" type="number">
+                </div>
+                <div class="range-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Ширина (мм)</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__slider range-slider__wrap" data-slider-min="0" data-slider-max="3600">
+                <div class="filter__slider-inputs">
+                    <input class="range-slider__input1" value="3200" min="0" max="999999" type="number">
+                    <span>—</span>
+                    <input class="range-slider__input2" value="75000" min="0" max="999999" type="number">
+                </div>
+                <div class="range-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show">
+            <span>Высота чаши (мм)</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__slider range-slider__wrap" data-slider-min="0" data-slider-max="8600">
+                <div class="filter__slider-inputs">
+                    <input class="range-slider__input1" value="3200" min="0" max="999999" type="number">
+                    <span>—</span>
+                    <input class="range-slider__input2" value="75000" min="0" max="999999" type="number">
+                </div>
+                <div class="range-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group filter__group--active">
+        <div class="filter__show">
+            <span>Материал</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='material1' />
+                <label for='material1'>
+                    Керамика
+                    <span>(15)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='material2' />
+                <label for='material2'>
+                    Санкерамика
+                    <span>(9)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='material3' />
+                <label for='material3'>
+                    Санфарфор
+                    <span>(9)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input checked type='checkbox' class='checkbox' id='material4' />
+                <label for='material4'>
+                    Санфаянс
+                    <span>(2)</span>
+                </label>
+            </div>
+            <div class="filter__check check">
+                <input checked type='checkbox' class='checkbox' id='material5' />
+                <label for='material5'>
+                    Фарфор
+                    <span>(1)</span>
+                </label>
+            </div>
+            <div class="filter__check filter__check--hidden check">
+                <input type='checkbox' class='checkbox' id='material6' />
+                <label for='material6'>
+                    Фарфор
+                    <span>(1)</span>
+                </label>
+            </div>
+            <div class="filter__check filter__check--hidden check">
+                <input type='checkbox' class='checkbox' id='material7' />
+                <label for='material7'>
+                    Фарфор
+                    <span>(1)</span>
+                </label>
+            </div>
+            <button class="filter__check-all text-btn">
+                <span class="filter__check-all-show">Показать все</span>
+                <span class="filter__check-all-hide">Скрыть</span>
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show">
+            <span>Форма</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='form1' />
+                <label for='form1'>
+                    Форма
+                    <span>(207)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show">
+            <span>Сиденье</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='char1' />
+                <label for='char1'>
+                    Сиденье
+                    <span>(207)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show">
+            <span>Цвет</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='color1' />
+                <label for='color1'>
+                    Цвет
+                    <span>(207)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show">
+            <span>Вид</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5L1 1" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="filter__hidden">
+            <div class="filter__check check">
+                <input type='checkbox' class='checkbox' id='view1' />
+                <label for='view1'>
+                    Вид
+                    <span>(207)</span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show filter__show--switch">
+            <span>Только в наличии</span>
+            <div class="filter__switch switch">
+                <input type='checkbox' class='checkbox' id='switch1' />
+                <label for='switch1'></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter__group">
+        <div class="filter__show filter__show--switch">
+            <span>Товары со скидкой</span>
+            <div class="filter__switch switch">
+                <input disabled type='checkbox' class='checkbox' id='switch2' />
+                <label for='switch2'></label>
+            </div>
+        </div>
+    </div>
+
+</div>

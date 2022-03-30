@@ -1,0 +1,122 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Корзина", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <span class="breadcrumbs__item">Корзина</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='order-success'>
+                <div class='container'>
+                    <div class='order-success__inner'>
+                        <div class="order-success__top">
+                            <h1 class="order-success__title display3">Ваш заказ принят</h1>
+                            <button class="order-success__print">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 9.50033V3.66699H17V9.50033" stroke="#261C15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.0013 17H5.33464C4.89261 17 4.46868 16.8244 4.15612 16.5118C3.84356 16.1993 3.66797 15.7754 3.66797 15.3333V11.1667C3.66797 10.7246 3.84356 10.3007 4.15612 9.98816C4.46868 9.6756 4.89261 9.5 5.33464 9.5H18.668C19.11 9.5 19.5339 9.6756 19.8465 9.98816C20.159 10.3007 20.3346 10.7246 20.3346 11.1667V15.3333C20.3346 15.7754 20.159 16.1993 19.8465 16.5118C19.5339 16.8244 19.11 17 18.668 17H17.0013" stroke="#261C15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 13.667H7V20.3337H17V13.667Z" stroke="#261C15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="order-success__wrap">
+                            <div class="order-success__wrap-top">
+                                <div class="order-success__left">
+                                    <h4 class="order-success__subtitle display4">Спасибо за покупку</h4>
+                                    <div class="order-success__table">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>№ заказа</td>
+                                                    <td>33561</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Покупатель</td>
+                                                    <td>Ефимов Сергей Альбертович</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дата заказа</td>
+                                                    <td>17.12.2021 – 11:24</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Электронная почта</td>
+                                                    <td>Sergey777@mail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Телефон</td>
+                                                    <td>+74593905686</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Способ оплаты</td>
+                                                    <td>Наличными при получении</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Доставка</td>
+                                                    <td>Курьерская на адрес получателя</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                                <div class="order-success__right">
+                                    <h4 class="order-success__subtitle display4">Итого</h4>
+                                    <div class="order-success__table">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>3 товара</td>
+                                                    <td>26 414 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Скидка</td>
+                                                    <td>–7 239 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Доставка</td>
+                                                    <td>450 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>К оплате</td>
+                                                    <td>20 240 ₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-success__bottom">
+                                <h4 class="order-success__subtitle display4">Уважаемый покупатель</h4>
+                                <div class="order-success__desc">
+                                    В случае возникновения вопросов косательно заказа или нашей работы, вы можете позвонить по телефону <a href="tel:+7 (812) 493 33 33">+7 (812) 493 33 33</a> или написать нам через <a href="">форму связи</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

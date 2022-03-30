@@ -1,0 +1,40 @@
+<div class="catalog-block__slider">
+    <div class='swiper-container'>
+        <div class='swiper-wrapper'>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"false","discount":"true"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"true", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"true","discount":"true"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"true", "status":"img/has-grey.svg","statusText":"Под заказ","sale":"false","discount":"false"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"true", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"true","discount":"true"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+            </div>
+            <div class='swiper-slide'>
+                @@include('../cards/_catalog-card.html',{"deleteBtn":"false","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+            </div>
+        </div>
+    </div>
+    <div class='swiper-button-prev'>
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class='swiper-button-next'>
+        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L8 8L1 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+</div>

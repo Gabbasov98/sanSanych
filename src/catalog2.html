@@ -1,0 +1,142 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Каталог", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Каталог</a>
+                    <span class="breadcrumbs__item">Бытовая сантехника</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+            <section class='popular'>
+                <div class='container'>
+                    <p class="popular__title display1">Бытовая сантехника</p>
+                    <a href="" class="popular__banner banner">
+                        <img src="img/banner.webp" alt="">
+                    </a>
+                    <div class="popular__content">
+                        <div class="popular__grid">
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular12.webp","text":"Ванны"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular13.webp","text":"Душевые кабины"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular14.webp","text":"Раковины"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular15.webp","text":"Смесители"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular16.webp","text":"Унитазы"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular17.webp","text":"Инсталляции"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular18.webp","text":"Биде и писсуары"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular19.webp","text":"Мойки для кухни"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular20.webp","text":"Аксессуары для ванной комнаты"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular21.webp","text":"Сантехника для детей"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular22.webp","text":"Сантехника для людей с ограниченными"})
+                            </a>
+                            <a href="" class="popular__item">
+                                @@include('components/cards/_popular-card.html',{"img":"img/popular23.webp","text":"Готовые комплекты для ванной комнаты"})
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='popular-brands'>
+                <div class='container'>
+                    <h3 class="popular-brands__title display3">Популярные бренды</h3>
+                    <div class='popular-brands__items'>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand.webp" alt="">
+                        </a>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand2.webp" alt="">
+                        </a>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand3.webp" alt="">
+                        </a>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand4.webp" alt="">
+                        </a>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand5.webp" alt="">
+                        </a>
+                        <a href="" class="popular-brands__item btn btn-grey">
+                            <img src="img/popular-brand6.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-block'>
+                <div class='container'>
+                    <div class='catalog-block__top'>
+                        <p class="catalog-block__title display3">Последние просмотренные товары</p>
+                        <a href="" class="catalog-block__link btn text-link">Больше товаров</a>
+                    </div>
+                    @@include('components/catalog-components/_catalog-slider.html')
+                </div>
+            </section>
+
+            <section class='text-block'>
+                <div class='container'>
+                    <h3>Интернет-магазин инженерной и бытовой сантехники в Санкт-Петербурге и Ленинградской области</h3>
+                    <p>У нас вы сможете выбрать и купить ванну, максимально удовлетворяющую вашим потребностям. В нашем магазине представлены ванны разных форм и разного размера — от самых маленьких ванн размером 120х70 и 130х70 см до ванн больших размеров,
+                        в большом ассортименте представлены ванны самых популярных размеров — ванны 150х70 и ванны 170х70 см:</p>
+                    <ul>
+                        <li>Акриловые ванны 170х70 см </li>
+                        <li>Акриловые ванны 150х70 см </li>
+                        <li>Чугунные ванны 150х70 см</li>
+                    </ul>
+
+                    <p>Мы рады предложить вам ванны таких известных брендов как Jacob Delafon, Bach, Равак, Акватек, Тритон и многих других. Вы легко сможете выбрать ванну по своим средствам – в нашем магазине можно купить как недорогую ванну, так и модели
+                        премиум-класса со множеством дополнительных функций.</p>
+                    <p>Если вы ищете дешевую ванну в СПб, предлагаем обратить внимание на раздел нашего сайта Распродажа — здесь вы сможете недорого купить ванны по сниженным ценам, и на раздел Акции, в котором регулярно публикуется информация о выгодных
+                        акциях, предлагаемых онлайн-магазином сантехники Сан Саныч.</p>
+                    <p>Купить ванну в нашем интернет-магазине вы можете как за наличный, так и за безналичный расчет. Осуществляется доставка как по СПб и ЛО, так и в другие регионы России. При сумме покупки 20000 руб. и выше — мы доставим ваши покупки по
+                        Санкт-Петербургу бесплатно! На все ванны предоставляется гарантия производителя.</p>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

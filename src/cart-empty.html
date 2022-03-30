@@ -1,0 +1,65 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Корзина", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <span class="breadcrumbs__item">Корзина</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='cart'>
+                <div class='container'>
+                    <div class='cart__inner'>
+                        <div class="cart__left">
+                            <div class="cart__nav">
+                                <h3 class="cart__title display3">
+                                    Ваша корзина пуста :(
+                                </h3>
+                            </div>
+
+                            <div class="cart__empty">
+                                <p>
+                                    Посмотрите
+                                    <a href="">Акции</a> и
+                                    <a href="">Распродажи</a>
+                                </p>
+                                <p>
+                                    Нужна помощь в выборе?
+                                    <a href="">Позвоните </a> или
+                                    <a href="">Напишите нам</a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="cart__right">
+                            <div class="cart-info">
+                                <span class="cart-info__title">В корзине отсутствуют товары</span>
+                                <button class="cart-info__btn cart-info__btn--empty btn btn-primary">Добавить товары</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

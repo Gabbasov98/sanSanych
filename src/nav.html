@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Навигация</title>
+</head>
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Основные страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog2.html" style="display: block; margin-bottom: 20px;">
+            Каталог 2
+        </a>
+        <a href="catalog3.html" style="display: block; margin-bottom: 20px;">
+            Каталог 3
+        </a>
+        <a href="catalog4.html" style="display: block; margin-bottom: 20px;">
+            Каталог 4
+        </a>
+        <a href="catalog5.html" style="display: block; margin-bottom: 20px;">
+            Каталог 5
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина 
+        </a>
+        <a href="cart-empty.html" style="display: block; margin-bottom: 20px;">
+            Корзина 2
+        </a>
+        <a href="order.html" style="display: block; margin-bottom: 20px;">
+            Оформление заказа 
+        </a>
+        <a href="order-success.html" style="display: block; margin-bottom: 20px;">
+            Ваш заказ принят
+        </a>
+        <a href="cabinet.html" style="display: block; margin-bottom: 20px;">
+            Мой кабинет
+        </a>
+        <a href="cabinet2.html" style="display: block; margin-bottom: 20px;">
+            Мой кабинет2
+        </a>
+        <a href="cabinet3.html" style="display: block; margin-bottom: 20px;">
+            Мой кабинет3
+        </a>
+        <a href="cabinet4.html" style="display: block; margin-bottom: 20px;">
+            Мой кабинет4
+        </a>
+        <a href="cabinet5.html" style="display: block; margin-bottom: 20px;">
+            Мой кабинет5
+        </a>
+        <a href="promo.html" style="display: block; margin-bottom: 20px;">
+            Акции и скидки
+        </a>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            Статьи
+        </a>
+
+
+        <strong>Модалки</strong>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#callModal">
+            Обратный звонок
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#callModal2">
+            Обратный звонок 2
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Логин
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#regModal">
+            Регистрация
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#forgotModal">
+            Напомнить пароль
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#calcModal">
+            Запросить расчёт
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#orderModal">
+             Быстрый заказ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#addCartModal">
+            Товар добавлен в корзину
+       </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#lowPriceModal">
+            Снизим цену!
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#catalogModal1">
+            Модалка из карточки товара
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#catalogModal2">
+            Модалка из карточки товара 2
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#bonusModal">
+            Выиграть скидку
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#cartModal">
+            Поделиться корзиной
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#orderModal2">
+            В вашем заказе 3 товара
+       </button>
+    </div>
+
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    <!--  -->
+    @@include('components/catalog-item-components/_catalog-popups.html')
+    <!--  -->
+
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

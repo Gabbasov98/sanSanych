@@ -1,0 +1,513 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Мой кабинет", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Мой кабинет</a>
+                    <span class="breadcrumbs__item">Личная информация</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='cabinet'>
+                <div class='container'>
+                    <div class='cabinet__inner'>
+                        <aside class="cabinet__sidebar">
+                            @@include('components/cabinet-components/_cabinet-sidebar.html')
+                        </aside>
+                        <main class="cabinet__right">
+                            <h1 class="cabinet__title display3">Мои заказы</h1>
+
+                            <div class="user-orders tab-parent">
+                                <div class='user-orders__tabs tabs'>
+                                    <div class="tabs__wrap">
+                                        <div class="tab" data-tab-path="1">Все 12</div>
+                                        <div class="tab tab--active" data-tab-path="2">Ожидает оплаты 1</div>
+                                        <div class="tab" data-tab-path="3">В работе 0</div>
+                                        <div class="tab" data-tab-path="4">Отменен 1</div>
+                                        <div class="tab" data-tab-path="5">Выполнен 6</div>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="1">
+                                    1
+                                </div>
+                                <div class="tab__content tab__content--active" data-tab-path="2">
+                                    <div class="user-orders__items">
+                                        <div class="user-order">
+                                            <div class="user-order__show">
+                                                <span class="user-order__badge" style="background: #FFA900;"></span>
+                                                <div class="user-order__left">
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">№33561 от 17.12.2021</span>
+                                                        <span class="user-order__cell">Ожидает оплаты</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Товаров</span>
+                                                        <span class="user-order__cell">6</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Сумма заказа</span>
+                                                        <span class="user-order__cell user-order__cell--bold">5347 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-order__right">
+                                                    <div class="user-order__images">
+                                                        <div class="user-order__img">
+                                                            <img src="img/cart.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/card2.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/card3.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/card4.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/card5.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/cart.webp" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <button class="user-order__btn">
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L6.5 6.5L12 1" stroke="#3B6D9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="user-order__hidden">
+                                                <div class="user-order__table">
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Получатель</span>
+                                                        <span class="user-order__table-desc">Ефимов Сергей Альбертович</span>
+                                                        <span class="user-order__table-desc">Sergey777@mail.com</span>
+                                                        <span class="user-order__table-desc">+74593905686</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Способ оплаты:</span>
+                                                        <span class="user-order__table-desc">Наличными при получении</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Доставка:</span>
+                                                        <span class="user-order__table-desc">Курьерская</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Адрес доставки:</span>
+                                                        <span class="user-order__table-desc">Санкт-Петербург, ул. Орджоникидзе 47 ст 2</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="user-order__nav">
+                                                    <button class="user-order__nav-btn user-order__nav-print btn">
+                                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.5 7.50033V1.66699H15.5V7.50033" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.5013 15H3.83464C3.39261 15 2.96868 14.8244 2.65612 14.5118C2.34356 14.1993 2.16797 13.7754 2.16797 13.3333V9.16667C2.16797 8.72464 2.34356 8.30072 2.65612 7.98816C2.96868 7.6756 3.39261 7.5 3.83464 7.5H17.168C17.61 7.5 18.0339 7.6756 18.3465 7.98816C18.659 8.30072 18.8346 8.72464 18.8346 9.16667V13.3333C18.8346 13.7754 18.659 14.1993 18.3465 14.5118C18.0339 14.8244 17.61 15 17.168 15H15.5013" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M15.5 11.667H5.5V18.3337H15.5V11.667Z" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        <span>Распечатать</span>
+                                                    </button>
+                                                    <button class="user-order__nav-btn btn btn-primary">
+                                                        <img src="img/reload.png" alt="">
+                                                        <span>Повторить заказ</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="user-order__detail">
+                                                    <h4 class="user-order__detail-title display4">Содержимое заказа</h4>
+                                                    <div class="user-order__detail-items">
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart2.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart3.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-order">
+                                            <div class="user-order__show">
+                                                <span class="user-order__badge" style="background: #5DA82F;"></span>
+                                                <div class="user-order__left">
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">№33561 от 17.12.2021</span>
+                                                        <span class="user-order__cell">Выполнен</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Товаров</span>
+                                                        <span class="user-order__cell">6</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Сумма заказа</span>
+                                                        <span class="user-order__cell user-order__cell--bold">5347 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-order__right">
+                                                    <div class="user-order__images">
+                                                        <div class="user-order__img">
+                                                            <img src="img/card5.webp" alt="">
+                                                        </div>
+                                                        <div class="user-order__img">
+                                                            <img src="img/cart.webp" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <button class="user-order__btn">
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L6.5 6.5L12 1" stroke="#3B6D9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="user-order__hidden">
+                                                <div class="user-order__table">
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Получатель</span>
+                                                        <span class="user-order__table-desc">Ефимов Сергей Альбертович</span>
+                                                        <span class="user-order__table-desc">Sergey777@mail.com</span>
+                                                        <span class="user-order__table-desc">+74593905686</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Способ оплаты:</span>
+                                                        <span class="user-order__table-desc">Наличными при получении</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Доставка:</span>
+                                                        <span class="user-order__table-desc">Курьерская</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Адрес доставки:</span>
+                                                        <span class="user-order__table-desc">Санкт-Петербург, ул. Орджоникидзе 47 ст 2</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="user-order__nav">
+                                                    <button class="user-order__nav-btn user-order__nav-print btn">
+                                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.5 7.50033V1.66699H15.5V7.50033" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.5013 15H3.83464C3.39261 15 2.96868 14.8244 2.65612 14.5118C2.34356 14.1993 2.16797 13.7754 2.16797 13.3333V9.16667C2.16797 8.72464 2.34356 8.30072 2.65612 7.98816C2.96868 7.6756 3.39261 7.5 3.83464 7.5H17.168C17.61 7.5 18.0339 7.6756 18.3465 7.98816C18.659 8.30072 18.8346 8.72464 18.8346 9.16667V13.3333C18.8346 13.7754 18.659 14.1993 18.3465 14.5118C18.0339 14.8244 17.61 15 17.168 15H15.5013" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M15.5 11.667H5.5V18.3337H15.5V11.667Z" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        <span>Распечатать</span>
+                                                    </button>
+                                                    <button class="user-order__nav-btn btn btn-primary">
+                                                        <img src="img/reload.png" alt="">
+                                                        <span>Повторить заказ</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="user-order__detail">
+                                                    <h4 class="user-order__detail-title display4">Содержимое заказа</h4>
+                                                    <div class="user-order__detail-items">
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart2.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart3.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-order">
+                                            <div class="user-order__show">
+                                                <span class="user-order__badge" style="background: #5DA82F;"></span>
+                                                <div class="user-order__left">
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">№33561 от 17.12.2021</span>
+                                                        <span class="user-order__cell">Выполнен</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Товаров</span>
+                                                        <span class="user-order__cell">6</span>
+                                                    </div>
+                                                    <div class="user-order__col">
+                                                        <span class="user-order__cell">Сумма заказа</span>
+                                                        <span class="user-order__cell user-order__cell--bold">5347 ₽</span>
+                                                    </div>
+                                                </div>
+                                                <div class="user-order__right">
+                                                    <div class="user-order__images">
+
+                                                    </div>
+                                                    <button class="user-order__btn">
+                                                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L6.5 6.5L12 1" stroke="#3B6D9A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="user-order__hidden">
+                                                <div class="user-order__table">
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Получатель</span>
+                                                        <span class="user-order__table-desc">Ефимов Сергей Альбертович</span>
+                                                        <span class="user-order__table-desc">Sergey777@mail.com</span>
+                                                        <span class="user-order__table-desc">+74593905686</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Способ оплаты:</span>
+                                                        <span class="user-order__table-desc">Наличными при получении</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Доставка:</span>
+                                                        <span class="user-order__table-desc">Курьерская</span>
+                                                    </div>
+                                                    <div class="user-order__table-col">
+                                                        <span class="user-order__table-title">Адрес доставки:</span>
+                                                        <span class="user-order__table-desc">Санкт-Петербург, ул. Орджоникидзе 47 ст 2</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="user-order__nav">
+                                                    <button class="user-order__nav-btn user-order__nav-print btn">
+                                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M5.5 7.50033V1.66699H15.5V7.50033" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.5013 15H3.83464C3.39261 15 2.96868 14.8244 2.65612 14.5118C2.34356 14.1993 2.16797 13.7754 2.16797 13.3333V9.16667C2.16797 8.72464 2.34356 8.30072 2.65612 7.98816C2.96868 7.6756 3.39261 7.5 3.83464 7.5H17.168C17.61 7.5 18.0339 7.6756 18.3465 7.98816C18.659 8.30072 18.8346 8.72464 18.8346 9.16667V13.3333C18.8346 13.7754 18.659 14.1993 18.3465 14.5118C18.0339 14.8244 17.61 15 17.168 15H15.5013" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M15.5 11.667H5.5V18.3337H15.5V11.667Z" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                        <span>Распечатать</span>
+                                                    </button>
+                                                    <button class="user-order__nav-btn btn btn-primary">
+                                                        <img src="img/reload.png" alt="">
+                                                        <span>Повторить заказ</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="user-order__detail">
+                                                    <h4 class="user-order__detail-title display4">Содержимое заказа</h4>
+                                                    <div class="user-order__detail-items">
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart2.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="order-detail">
+                                                            <a href="" class="order-detail__left">
+                                                                <div class="order-detail__img">
+                                                                    <img src="img/cart3.webp" alt="">
+                                                                </div>
+                                                                <span class="order-detail__title">Унитаз подвесной AM.PM Spirit V2.0 FlashClean с сиденьем</span>
+                                                            </a>
+                                                            <div class="order-detail__right">
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Цена</span>
+                                                                    <span class="order-detail__col-desc">1274 ₽</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Количество</span>
+                                                                    <span class="order-detail__col-desc">1 шт</span>
+                                                                </div>
+                                                                <div class="order-detail__col">
+                                                                    <span class="order-detail__col-title">Сумма</span>
+                                                                    <span class="order-detail__col-desc order-detail__col-desc--bold">1274 ₽</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab__content" data-tab-path="3">
+                                    3
+                                </div>
+                                <div class="tab__content" data-tab-path="4">
+                                    4
+                                </div>
+                                <div class="tab__content" data-tab-path="5">
+                                    5
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

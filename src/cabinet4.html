@@ -1,0 +1,353 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Мой кабинет", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Мой кабинет</a>
+                    <span class="breadcrumbs__item">Личная информация</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+            <section class='comprasion'>
+                <div class='container'>
+                    <div class='comprasion__inner'>
+                        <h1 class="comprasion__title display3">Избранное</h1>
+                        <div class="comprasion__top">
+                            <div class="filter-tags">
+                                <div class="filter-tags__title">Категории:</div>
+                                <div class="filter-tags__wrap">
+                                    <div class="filter-tags__item">
+                                        <span>Унитазы 
+                                            <span class="grey-text">(5)</span>
+                                        </span>
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter-tags__item">
+                                        <span>Инсталяции 
+                                            <span class="grey-text">(1)</span>
+                                        </span>
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter-tags__item">
+                                        <span>Душевые кабины 
+                                            <span class="grey-text">(1)</span>
+                                        </span>
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter-tags__item">
+                                        <span>Фитинги 
+                                            <span class="grey-text">(1)</span>
+                                        </span>
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="filter-tags__item">
+                                        <span>Трубы 
+                                            <span class="grey-text">(2)</span>
+                                        </span>
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <button class="filter-tags__clear text-btn">Удалить всё избранное </button>
+                                </div>
+                            </div>
+                            <button class="comprasion__add btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 2.4375V15.5625M2.4375 9H15.5625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Добавить товары</span>
+                            </button>
+                        </div>
+
+                        <div class="comprasion__bottom">
+                            <div class="comprasion__table">
+                                <div class="comprasion__col">
+                                    <div class="comprasion__col-top">
+                                        <div class="comprasion__title">Показывать</div>
+                                        <div class="comprasion__radios">
+                                            <div class="comprasion__radio radio">
+                                                <input checked type='radio' id='show1' name='show' />
+                                                <label for='show1'>Все параметры</label>
+                                            </div>
+                                            <div class="comprasion__radio radio">
+                                                <input type='radio' id='show2' name='show' />
+                                                <label for='show2'>Только отличия</label>
+                                            </div>
+                                        </div>
+                                        <div class="comprasion__properties-title comprasion__title">Характеристики</div>
+                                    </div>
+
+                                    <div class="comprasion__properties">
+
+                                        <div class="comprasion__property">Код:</div>
+                                        <div class="comprasion__property">Тип фитинга:</div>
+                                        <div class="comprasion__property">Бренд:</div>
+                                        <div class="comprasion__property">Размер:</div>
+                                        <div class="comprasion__property">Рабочее давление (бар):</div>
+                                        <div class="comprasion__property">Материал:</div>
+                                        <div class="comprasion__property">Рабочая среда:</div>
+                                        <div class="comprasion__property">Резьба:</div>
+                                        <div class="comprasion__property">Страна:</div>
+                                        <div class="comprasion__property">Гарантия производителя:</div>
+                                        <div class="comprasion__property">Тип соединения:</div>
+                                        <div class="comprasion__property">Тип соединения:</div>
+                                        <div class="comprasion__property">Вид:</div>
+                                    </div>
+                                </div>
+                                <div class="comprasion__col">
+                                    <div class="comprasion__col-top">
+                                        <div class="comprasion-card">
+                                            <a href="" class="comprasion-card__img">
+                                                <img src="img/card2.png" alt="">
+                                            </a>
+                                            <div class="comprasion-card__right">
+                                                <div class="comprasion-card__top">
+                                                    <a href="" class="comprasion-card__title">Смеситель для раковины Tiemme Ten 411800501</a>
+                                                    <button class="comprasion-card__delete">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 4H3.33333H14" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M6.66797 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.33203 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="comprasion-card__bottom">
+                                                    <div class="comprasion-card__prices">
+                                                        <div class="comprasion-card__sale">
+                                                            <span class="comprasion-card__sale-price">3000</span>
+                                                            <span class="comprasion-card__sale-percent">–20%</span>
+                                                        </div>
+                                                        <div class="comprasion-card__price comprasion-card__price--red ">
+                                                            7610 ₽
+                                                            <span>/ шт</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="catalog-card__cart btn">
+                                                        <span class="catalog-card__cart-load spinner-border" role="status">
+                                                            <span class="sr-only"></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comprasion__properties">
+                                        <div class="comprasion__property">22283</div>
+                                        <div class="comprasion__property">Кран шаровый со сгоном</div>
+                                        <div class="comprasion__property comprasion__property--blue">TIEMME</div>
+                                        <div class="comprasion__property">3/4" </div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Латунь CW617N</div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Внутренняя/наружная</div>
+                                        <div class="comprasion__property">Италия</div>
+                                        <div class="comprasion__property">24 мес.</div>
+                                        <div class="comprasion__property">Резьба</div>
+                                        <div class="comprasion__property">Запорная арматура для воды (резьба)</div>
+                                        <div class="comprasion__property">2450005 / 2472N</div>
+                                    </div>
+                                </div>
+                                <div class="comprasion__col">
+                                    <div class="comprasion__col-top">
+                                        <div class="comprasion-card">
+                                            <a href="" class="comprasion-card__img">
+                                                <img src="img/card2.png" alt="">
+                                            </a>
+                                            <div class="comprasion-card__right">
+                                                <div class="comprasion-card__top">
+                                                    <a href="" class="comprasion-card__title">Смеситель для раковины Tiemme Ten 411800501</a>
+                                                    <button class="comprasion-card__delete">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 4H3.33333H14" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M6.66797 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.33203 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="comprasion-card__bottom">
+                                                    <div class="comprasion-card__prices">
+                                                        <div class="comprasion-card__sale">
+                                                            <span class="comprasion-card__sale-price">3000</span>
+                                                            <span class="comprasion-card__sale-percent">–20%</span>
+                                                        </div>
+                                                        <div class="comprasion-card__price comprasion-card__price--red ">
+                                                            7610 ₽
+                                                            <span>/ шт</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="catalog-card__cart btn">
+                                                        <span class="catalog-card__cart-load spinner-border" role="status">
+                                                            <span class="sr-only"></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comprasion__properties">
+                                        <div class="comprasion__property">22283</div>
+                                        <div class="comprasion__property">Кран шаровый со сгоном</div>
+                                        <div class="comprasion__property comprasion__property--blue">TIEMME</div>
+                                        <div class="comprasion__property">3/4" </div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Латунь CW617N</div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Внутренняя/наружная</div>
+                                        <div class="comprasion__property">Италия</div>
+                                        <div class="comprasion__property">24 мес.</div>
+                                        <div class="comprasion__property">Резьба</div>
+                                        <div class="comprasion__property">Запорная арматура для воды (резьба)</div>
+                                        <div class="comprasion__property">2450005 / 2472N</div>
+                                    </div>
+                                </div>
+                                <div class="comprasion__col">
+                                    <div class="comprasion__col-top">
+                                        <div class="comprasion-card">
+                                            <a href="" class="comprasion-card__img">
+                                                <img src="img/card2.png" alt="">
+                                            </a>
+                                            <div class="comprasion-card__right">
+                                                <div class="comprasion-card__top">
+                                                    <a href="" class="comprasion-card__title">Смеситель для раковины Tiemme Ten 411800501</a>
+                                                    <button class="comprasion-card__delete">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 4H3.33333H14" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M6.66797 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.33203 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="comprasion-card__bottom">
+                                                    <div class="comprasion-card__prices">
+                                                        <div class="comprasion-card__sale">
+                                                            <span class="comprasion-card__sale-price">3000</span>
+                                                            <span class="comprasion-card__sale-percent">–20%</span>
+                                                        </div>
+                                                        <div class="comprasion-card__price comprasion-card__price--red ">
+                                                            7610 ₽
+                                                            <span>/ шт</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="catalog-card__cart btn">
+                                                        <span class="catalog-card__cart-load spinner-border" role="status">
+                                                            <span class="sr-only"></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comprasion__properties">
+                                        <div class="comprasion__property">22283</div>
+                                        <div class="comprasion__property">Кран шаровый со сгоном</div>
+                                        <div class="comprasion__property comprasion__property--blue">TIEMME</div>
+                                        <div class="comprasion__property">3/4" </div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Латунь CW617N</div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Внутренняя/наружная</div>
+                                        <div class="comprasion__property">Италия</div>
+                                        <div class="comprasion__property">24 мес.</div>
+                                        <div class="comprasion__property">Резьба</div>
+                                        <div class="comprasion__property">Запорная арматура для воды (резьба)</div>
+                                        <div class="comprasion__property">2450005 / 2472N</div>
+                                    </div>
+                                </div>
+                                <div class="comprasion__col">
+                                    <div class="comprasion__col-top">
+                                        <div class="comprasion-card">
+                                            <a href="" class="comprasion-card__img">
+                                                <img src="img/card2.png" alt="">
+                                            </a>
+                                            <div class="comprasion-card__right">
+                                                <div class="comprasion-card__top">
+                                                    <a href="" class="comprasion-card__title">Смеситель для раковины Tiemme Ten 411800501</a>
+                                                    <button class="comprasion-card__delete">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 4H3.33333H14" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M5.33203 4.00016V2.66683C5.33203 2.31321 5.47251 1.97407 5.72256 1.72402C5.9726 1.47397 6.31174 1.3335 6.66536 1.3335H9.33203C9.68565 1.3335 10.0248 1.47397 10.2748 1.72402C10.5249 1.97407 10.6654 2.31321 10.6654 2.66683V4.00016M12.6654 4.00016V13.3335C12.6654 13.6871 12.5249 14.0263 12.2748 14.2763C12.0248 14.5264 11.6857 14.6668 11.332 14.6668H4.66536C4.31174 14.6668 3.9726 14.5264 3.72256 14.2763C3.47251 14.0263 3.33203 13.6871 3.33203 13.3335V4.00016H12.6654Z" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M6.66797 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9.33203 7.3335V11.3335" stroke="#AAAAAA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="comprasion-card__bottom">
+                                                    <div class="comprasion-card__prices">
+                                                        <div class="comprasion-card__sale">
+                                                            <span class="comprasion-card__sale-price">3000</span>
+                                                            <span class="comprasion-card__sale-percent">–20%</span>
+                                                        </div>
+                                                        <div class="comprasion-card__price comprasion-card__price--red ">
+                                                            7610 ₽
+                                                            <span>/ шт</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="catalog-card__cart btn">
+                                                        <span class="catalog-card__cart-load spinner-border" role="status">
+                                                            <span class="sr-only"></span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comprasion__properties">
+                                        <div class="comprasion__property">22283</div>
+                                        <div class="comprasion__property">Кран шаровый со сгоном</div>
+                                        <div class="comprasion__property comprasion__property--blue">TIEMME</div>
+                                        <div class="comprasion__property">3/4" </div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Латунь CW617N</div>
+                                        <div class="comprasion__property">Неагрессивные жидкости и сжатый воздух</div>
+                                        <div class="comprasion__property">Внутренняя/наружная</div>
+                                        <div class="comprasion__property">Италия</div>
+                                        <div class="comprasion__property">24 мес.</div>
+                                        <div class="comprasion__property">Резьба</div>
+                                        <div class="comprasion__property">Запорная арматура для воды (резьба)</div>
+                                        <div class="comprasion__property">2450005 / 2472N</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

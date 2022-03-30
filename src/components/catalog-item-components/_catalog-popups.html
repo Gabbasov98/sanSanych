@@ -1,0 +1,640 @@
+<div class="modal  fade order-modal" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="pointer-events: unset;">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title display3">Быстрый заказ</h3>
+            <div class="modal-cart__item">
+                <a href="" class="modal-cart__item-img">
+                    <img src="img/cart.webp" alt="">
+                </a>
+                <div class="modal-cart__item-content">
+                    <a href="" class="modal-cart__item-title">Унитаз-компакт Sanita Лада комфорт 605х340х775</a>
+                    <div class="modal-cart__item-bottom">
+                        <div class="modal-cart__calc cartcalc">
+                            <button class="ccalc-minus ccalc-minus--disable">
+                            <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2H14" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                            <input type="text" value="1">
+                            <button class="ccalc-plus">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14V2M14 8L2 8" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-cart__prices">
+                            <span class="modal-cart__price-old" data-sale="20%"> 33 414</span>
+                            <span class="modal-cart__price-new">23 390 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="modal__form">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Имя" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='tel' placeholder="Номер телефона*" />
+                </fieldset>
+                <button class="modal__form-btn btn btn-primary">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade order-modal" id="addCartModal" tabindex="-1" aria-labelledby="addCartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title modal__title--mb24 display3">Товар добавлен в корзину</h3>
+            <div class="modal-cart__item">
+                <a href="" class="modal-cart__item-img">
+                    <img src="img/cart.webp" alt="">
+                </a>
+                <div class="modal-cart__item-content">
+                    <a href="" class="modal-cart__item-title">Унитаз-компакт Sanita Лада комфорт 605х340х775</a>
+                    <div class="modal-cart__item-bottom">
+                        <div class="modal-cart__calc cartcalc">
+                            <button class="ccalc-minus ccalc-minus--disable">
+                            <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2H14" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                            <input type="text" value="1">
+                            <button class="ccalc-plus">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 14V2M14 8L2 8" stroke="#FF6C00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="modal-cart__prices">
+                            <span class="modal-cart__price-old" data-sale="20%"> 33 414</span>
+                            <span class="modal-cart__price-new">23 390 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal__form-btn btn btn-primary">Оформить заказ</button>
+            <button class="modal__form-btn modal__form-btn--grey btn btn-grey">Продолжить покупки</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lowPriceModal" tabindex="-1" aria-labelledby="lowPriceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#E7E9EB" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <h3 class="modal__title modal__title--mb24 display3">Снизим цену!</h3>
+            <p class="modal__desc">Убедитесь, что название и характеристики товара совпадают и он есть в наличии в том же городе. Цены сравниваются без учета скидок.</p>
+            <a href="" class="modal__link text-btn btn">Условия акции</a>
+            <form action="" class="modal__form modal__form--mt48">
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Цена на товар в другой сети" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='text' placeholder="Ссылка на товар*" />
+                </fieldset>
+                <fieldset class='form-group'>
+                    <input type='tel' placeholder="Номер телефона*" />
+                </fieldset>
+                <button class="modal__form-btn btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bonus-modal" id="bonusModal" tabindex="-1" aria-labelledby="bonusModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__content">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L13 13M13 1L1 13" stroke="#FBFAFA" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="bonus-modal__left">
+                <h3 class="modal__title display3">Выиграть скидку</h3>
+                <div class="bonus-modal__list">
+                    <div class="bonus-modal__list-item">
+                        <span class="bonus-modal__list-num">1</span>
+                        <span class="bonus-modal__list-text">Сотрите защитный слой с карты</span>
+                    </div>
+                    <div class="bonus-modal__list-item">
+                        <span class="bonus-modal__list-num">2</span>
+                        <span class="bonus-modal__list-text">Получите вашу персональную скидку</span>
+                    </div>
+                    <div class="bonus-modal__list-item">
+                        <span class="bonus-modal__list-num">3</span>
+                        <span class="bonus-modal__list-text">Добавьте товар в корзину</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bonus-modal__right">
+                <div class="bonus-modal__bonus">
+                    <span>–7%</span>
+                    <div class="box">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <a href="" class="bonus-modal__link">Условия и правила акции</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade catalog-modal" id="catalogModal1" tabindex="-1" aria-labelledby="lowPriceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="catalog-modal__wrap">
+            <div class="catalog-modal__top">
+                <button class="catalog-modal__back" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <span>Труба металлопластиковая</span>
+            </div>
+            <div class="catalog-modal__block">
+                <div class="catalog-modal__tabs">
+                    <div class="catalog-modal__tab catalog-modal__tab--active" data-tabs-path="1">Все о товаре</div>
+                    <div class="catalog-modal__tab" data-tabs-path="2">Доставка</div>
+                    <div class="catalog-modal__tab" data-tabs-path="3">Характеристики</div>
+                </div>
+                <div class="catalog-modal__content catalog-modal__content--active" data-tabs-path="1">
+                    <div class="catalog-modal__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class='swiper-slide'>
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-pagination'></div>
+                        <div class='swiper-button-prev'>
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L1 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="catalog-modal__title">Труба металлопластиковая Tiemme Al-Cobrapex 16х2 (0600010) 1 пог.м</div>
+                    <div class="catalog-modal__cart">
+                        <div class="catalog-modal__cart-top">
+                            <div class="catalog-modal__prices">
+                                <div class="catalog-modal__price-old">
+                                    <span>33 414</span>
+                                    <span class="catalog-modal__price-sale">–20%</span>
+                                </div>
+                                <div class="catalog-modal__price catalog-modal__price--sale">
+                                    23 390 ₽
+                                    <span>/ шт</span>
+                                </div>
+                            </div>
+                            <div class="catalog-modal__code">
+                                <span>Код: </span> 22283
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 4.5H5.5C4.94772 4.5 4.5 4.94772 4.5 5.5V10C4.5 10.5523 4.94772 11 5.5 11H10C10.5523 11 11 10.5523 11 10V5.5C11 4.94772 10.5523 4.5 10 4.5Z" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 7.5H2C1.73478 7.5 1.48043 7.39464 1.29289 7.20711C1.10536 7.01957 1 6.76522 1 6.5V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6.5C6.76522 1 7.01957 1.10536 7.20711 1.29289C7.39464 1.48043 7.5 1.73478 7.5 2V2.5" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__cart-bottom">
+                            <button class="catalog-modal__add btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0007 2.70801V17.2913M2.70898 9.99967H17.2923" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>В комплект</span>
+                            </button>
+                            <div class="catalog-modal__cart-buttons">
+                                <button class="catalog-modal__cart-btn btn catalog-modal__cart-favourite"></button>
+                                <button class="catalog-modal__cart-btn btn">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.77344 18.5374C4.77344 17.8061 5.36625 17.2133 6.09752 17.2133C6.82878 17.2133 7.4216 17.8061 7.4216 18.5374V25.1578C7.4216 25.889 6.82878 26.4819 6.09752 26.4819C5.36625 26.4819 4.77344 25.889 4.77344 25.1578V18.5374Z" fill="#FF6C00"/>
+                                    <path d="M10.0698 6.62067C10.0698 5.88941 10.6626 5.2966 11.3938 5.2966C12.1251 5.2966 12.7179 5.88941 12.7179 6.62067V25.1578C12.7179 25.889 12.1251 26.4819 11.3938 26.4819C10.6626 26.4819 10.0698 25.889 10.0698 25.1578V6.62067Z" fill="#FF6C00"/>
+                                    <path d="M15.3661 13.2411C15.3661 12.5098 15.9589 11.917 16.6901 11.917C17.4214 11.917 18.0142 12.5098 18.0142 13.2411V25.1578C18.0142 25.889 17.4214 26.4819 16.6901 26.4819C15.9589 26.4819 15.3661 25.889 15.3661 25.1578V13.2411Z" fill="#FF6C00"/>
+                                    <path d="M20.6624 3.97252C20.6624 3.24125 21.2552 2.64844 21.9865 2.64844C22.7177 2.64844 23.3105 3.24125 23.3105 3.97252V25.1578C23.3105 25.889 22.7177 26.4819 21.9865 26.4819C21.2552 26.4819 20.6624 25.889 20.6624 25.1578V3.97252Z" fill="#FF6C00"/>
+                                    <path d="M25.9587 14.5651C25.9587 13.8339 26.5515 13.2411 27.2828 13.2411C28.014 13.2411 28.6069 13.8339 28.6069 14.5651V25.1578C28.6069 25.889 28.014 26.4819 27.2828 26.4819C26.5515 26.4819 25.9587 25.889 25.9587 25.1578V14.5651Z" fill="#FF6C00"/>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-modal__content" data-tabs-path="2">
+                    <div class="product-delivery">
+                        <p class="product-delivery__title">
+                            Доставка в <span>Санкт-Петербург</span>
+                        </p>
+                        <table class="product-delivery__address">
+                            <thead>
+                                <tr>
+                                    <th>Самовывоз </th>
+                                    <th>
+                                        <div class="product-delivery__address-free">бесплатно</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="product-delivery__street">ул. Ленсовета, 22</span>
+                                    </td>
+                                    <td>22 шт.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="product-delivery__street">ул. Луначарского, 5</span>
+                                    </td>
+                                    <td>1 шт.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="product-delivery__street">ул. Таллинская, 7</span>
+                                    </td>
+                                    <td>13 шт.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="product-delivery__street">ул. Стахановцев, 10</span>
+                                    </td>
+                                    <td>5 шт.</td>
+                                </tr>
+                                <tr class="product-delivery__row-hide product-delivery__row-hidden">
+                                    <td>
+                                        <span class="product-delivery__street">ул. Стахановцев, 10</span>
+                                    </td>
+                                    <td>5 шт.</td>
+                                </tr>
+                                <tr class="product-delivery__row-hide product-delivery__row-hidden">
+                                    <td>
+                                        <span class="product-delivery__street">ул. Стахановцев, 10</span>
+                                    </td>
+                                    <td>5 шт.</td>
+                                </tr>
+                                <tr class="product-delivery__row-nav">
+                                    <td>
+                                        <button class="product-delivery__more btn text-btn">
+                                    <span class="product-delivery__more-show">Показать все</span>
+                                    <span class="product-delivery__more-hide">Скрыть все</span>
+                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.5L4 4.5L7 1.5" stroke="#3B6D9A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                                    </td>
+                                    <td>
+                                        <span class="grey-text">21.01.2022 в 17:00</span>
+                                    </td>
+                                </tr>
+                                <tr class="product-delivery__row-bottom">
+                                    <td>
+                                        Стоимость доставки
+                                    </td>
+                                    <td>
+                                        <div class="product-delivery__address-free">450 ₽</div>
+                                    </td>
+                                </tr>
+                                <tr class="product-delivery__row-bottom">
+                                    <td>
+                                        При заказе от 20 000 ₽
+                                    </td>
+                                    <td>
+                                        <div class="product-delivery__address-free">бесплатно</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="catalog-modal__content" data-tabs-path="3">
+                    <div class="catalog-modal__subtitle">Характеристики</div>
+                    <div class="product__property">
+                        <div class="product__property-item">
+                            <span class="product__property-title">Тип фитинга:</span>
+                            <span class="product__property-desc">Латунь CW617N</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Бренд:</span>
+                            <span class="product__property-desc">TIEMME</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Размер:</span>
+                            <span class="product__property-desc">3/4"</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Рабочее давление (бар):</span>
+                            <span class="product__property-desc">Кран шаровый со сгоном</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Материал:</span>
+                            <span class="product__property-desc">Латунь CW617N</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Рабочая среда:</span>
+                            <span class="product__property-desc">Неагрессивные жидкос...</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Тип:</span>
+                            <span class="product__property-desc">Американка</span>
+                        </div>
+                        <div class="product__property-item">
+                            <span class="product__property-title">Резьба:</span>
+                            <span class="product__property-desc">Внутренняя/наружная</span>
+                        </div>
+                        <div class="product__property-item product__property-item--hidden">
+                            <span class="product__property-title">Резьба:</span>
+                            <span class="product__property-desc">Внутренняя/наружная</span>
+                        </div>
+                        <div class="product__property-item product__property-item--hidden">
+                            <span class="product__property-title">Резьба:</span>
+                            <span class="product__property-desc">Внутренняя/наружная</span>
+                        </div>
+                        <button class="product__property-all btn text-btn">Все характеристики</button>
+                    </div>
+                </div>
+                <a href="" class="catalog-modal__link btn btn-grey">На станицу товара</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade catalog-modal" id="catalogModal2" tabindex="-1" aria-labelledby="lowPriceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="catalog-modal__wrap">
+            <div class="catalog-modal__top">
+                <button class="catalog-modal__back" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                <span>Труба металлопластиковая</span>
+            </div>
+
+            <div class="catalog-modal__block">
+
+                <div class="catalog-modal__product">
+                    <div class="catalog-modal__product-left">
+                        <div class="catalog-card__badges">
+
+                            <div class="catalog-card__badge catalog-card__badge--blue">Лидер продаж</div>
+
+                            <div class="catalog-card__badge catalog-card__badge--orange">Новинка</div>
+
+                        </div>
+                        <div class="catalog-card__top">
+                            <div class="catalog-card__images">
+                                <div class="catalog-card__img catalog-card__img--active" data-tab-path="1">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="2">
+                                    <img src="img/card2.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="3">
+                                    <img src="img/card3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__pag">
+                                <button class="catalog-card__pag-item catalog-card__pag-item--active" data-tab-path="1"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="2"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-modal__product-right">
+                        <a href="" class="catalog-modal__product-title">Труба металлопластиковая Tiemme Al-Cobrapex 16х2 (0600010) 1 пог.м</a>
+                        <div class="catalog-modal__prices">
+                            <div class="catalog-modal__price-old">
+                                <span>33 414</span>
+                                <span class="catalog-modal__price-sale">–20%</span>
+                            </div>
+                            <div class="catalog-modal__price catalog-modal__price--sale">
+                                23 390 ₽
+                                <span>/ шт</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__cart-bottom">
+                            <button class="catalog-modal__add btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0007 2.70801V17.2913M2.70898 9.99967H17.2923" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>В комплект</span>
+                            </button>
+                            <div class="catalog-modal__cart-buttons">
+                                <button class="catalog-modal__cart-btn btn catalog-modal__cart-favourite"></button>
+                                <button class="catalog-modal__cart-btn btn">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.77344 18.5374C4.77344 17.8061 5.36625 17.2133 6.09752 17.2133C6.82878 17.2133 7.4216 17.8061 7.4216 18.5374V25.1578C7.4216 25.889 6.82878 26.4819 6.09752 26.4819C5.36625 26.4819 4.77344 25.889 4.77344 25.1578V18.5374Z" fill="#FF6C00"/>
+                                    <path d="M10.0698 6.62067C10.0698 5.88941 10.6626 5.2966 11.3938 5.2966C12.1251 5.2966 12.7179 5.88941 12.7179 6.62067V25.1578C12.7179 25.889 12.1251 26.4819 11.3938 26.4819C10.6626 26.4819 10.0698 25.889 10.0698 25.1578V6.62067Z" fill="#FF6C00"/>
+                                    <path d="M15.3661 13.2411C15.3661 12.5098 15.9589 11.917 16.6901 11.917C17.4214 11.917 18.0142 12.5098 18.0142 13.2411V25.1578C18.0142 25.889 17.4214 26.4819 16.6901 26.4819C15.9589 26.4819 15.3661 25.889 15.3661 25.1578V13.2411Z" fill="#FF6C00"/>
+                                    <path d="M20.6624 3.97252C20.6624 3.24125 21.2552 2.64844 21.9865 2.64844C22.7177 2.64844 23.3105 3.24125 23.3105 3.97252V25.1578C23.3105 25.889 22.7177 26.4819 21.9865 26.4819C21.2552 26.4819 20.6624 25.889 20.6624 25.1578V3.97252Z" fill="#FF6C00"/>
+                                    <path d="M25.9587 14.5651C25.9587 13.8339 26.5515 13.2411 27.2828 13.2411C28.014 13.2411 28.6069 13.8339 28.6069 14.5651V25.1578C28.6069 25.889 28.014 26.4819 27.2828 26.4819C26.5515 26.4819 25.9587 25.889 25.9587 25.1578V14.5651Z" fill="#FF6C00"/>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-modal__product">
+                    <div class="catalog-modal__product-left">
+                        <div class="catalog-card__badges">
+                            <div class="catalog-card__badge catalog-card__badge--blue">Лидер продаж</div>
+                            <div class="catalog-card__badge catalog-card__badge--orange">Новинка</div>
+                        </div>
+                        <div class="catalog-card__top">
+                            <div class="catalog-card__images">
+                                <div class="catalog-card__img catalog-card__img--active" data-tab-path="1">
+                                    <img src="img/card2.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="2">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="3">
+                                    <img src="img/card3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__pag">
+                                <button class="catalog-card__pag-item catalog-card__pag-item--active" data-tab-path="1"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="2"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-modal__product-right">
+                        <a href="" class="catalog-modal__product-title">Труба металлопластиковая Tiemme Al-Cobrapex 16х2 (0600010) 1 пог.м</a>
+                        <div class="catalog-modal__prices">
+                            <div class="catalog-modal__price">
+                                23 390 ₽
+                                <span>/ шт</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__cart-bottom">
+                            <button class="catalog-modal__add btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0007 2.70801V17.2913M2.70898 9.99967H17.2923" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>В комплект</span>
+                            </button>
+                            <div class="catalog-modal__cart-buttons">
+                                <button class="catalog-modal__cart-btn btn catalog-modal__cart-favourite"></button>
+                                <button class="catalog-modal__cart-btn btn">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.77344 18.5374C4.77344 17.8061 5.36625 17.2133 6.09752 17.2133C6.82878 17.2133 7.4216 17.8061 7.4216 18.5374V25.1578C7.4216 25.889 6.82878 26.4819 6.09752 26.4819C5.36625 26.4819 4.77344 25.889 4.77344 25.1578V18.5374Z" fill="#FF6C00"/>
+                                    <path d="M10.0698 6.62067C10.0698 5.88941 10.6626 5.2966 11.3938 5.2966C12.1251 5.2966 12.7179 5.88941 12.7179 6.62067V25.1578C12.7179 25.889 12.1251 26.4819 11.3938 26.4819C10.6626 26.4819 10.0698 25.889 10.0698 25.1578V6.62067Z" fill="#FF6C00"/>
+                                    <path d="M15.3661 13.2411C15.3661 12.5098 15.9589 11.917 16.6901 11.917C17.4214 11.917 18.0142 12.5098 18.0142 13.2411V25.1578C18.0142 25.889 17.4214 26.4819 16.6901 26.4819C15.9589 26.4819 15.3661 25.889 15.3661 25.1578V13.2411Z" fill="#FF6C00"/>
+                                    <path d="M20.6624 3.97252C20.6624 3.24125 21.2552 2.64844 21.9865 2.64844C22.7177 2.64844 23.3105 3.24125 23.3105 3.97252V25.1578C23.3105 25.889 22.7177 26.4819 21.9865 26.4819C21.2552 26.4819 20.6624 25.889 20.6624 25.1578V3.97252Z" fill="#FF6C00"/>
+                                    <path d="M25.9587 14.5651C25.9587 13.8339 26.5515 13.2411 27.2828 13.2411C28.014 13.2411 28.6069 13.8339 28.6069 14.5651V25.1578C28.6069 25.889 28.014 26.4819 27.2828 26.4819C26.5515 26.4819 25.9587 25.889 25.9587 25.1578V14.5651Z" fill="#FF6C00"/>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-modal__product">
+                    <div class="catalog-modal__product-left">
+                        <div class="catalog-card__badges">
+
+                            <div class="catalog-card__badge catalog-card__badge--blue">Лидер продаж</div>
+
+                            <div class="catalog-card__badge catalog-card__badge--orange">Новинка</div>
+
+                        </div>
+                        <div class="catalog-card__top">
+                            <div class="catalog-card__images">
+                                <div class="catalog-card__img catalog-card__img--active" data-tab-path="1">
+                                    <img src="img/card3.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="2">
+                                    <img src="img/card2.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="3">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__pag">
+                                <button class="catalog-card__pag-item catalog-card__pag-item--active" data-tab-path="1"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="2"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-modal__product-right">
+                        <a href="" class="catalog-modal__product-title">Труба металлопластиковая Tiemme Al-Cobrapex 16х2 (0600010) 1 пог.м</a>
+                        <div class="catalog-modal__prices">
+                            <div class="catalog-modal__price-old">
+                                <span>33 414</span>
+                                <span class="catalog-modal__price-sale">–20%</span>
+                            </div>
+                            <div class="catalog-modal__price catalog-modal__price--sale">
+                                23 390 ₽
+                                <span>/ шт</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__cart-bottom">
+                            <button class="catalog-modal__add btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0007 2.70801V17.2913M2.70898 9.99967H17.2923" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>В комплект</span>
+                            </button>
+                            <div class="catalog-modal__cart-buttons">
+                                <button class="catalog-modal__cart-btn btn catalog-modal__cart-favourite"></button>
+                                <button class="catalog-modal__cart-btn btn">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.77344 18.5374C4.77344 17.8061 5.36625 17.2133 6.09752 17.2133C6.82878 17.2133 7.4216 17.8061 7.4216 18.5374V25.1578C7.4216 25.889 6.82878 26.4819 6.09752 26.4819C5.36625 26.4819 4.77344 25.889 4.77344 25.1578V18.5374Z" fill="#FF6C00"/>
+                                    <path d="M10.0698 6.62067C10.0698 5.88941 10.6626 5.2966 11.3938 5.2966C12.1251 5.2966 12.7179 5.88941 12.7179 6.62067V25.1578C12.7179 25.889 12.1251 26.4819 11.3938 26.4819C10.6626 26.4819 10.0698 25.889 10.0698 25.1578V6.62067Z" fill="#FF6C00"/>
+                                    <path d="M15.3661 13.2411C15.3661 12.5098 15.9589 11.917 16.6901 11.917C17.4214 11.917 18.0142 12.5098 18.0142 13.2411V25.1578C18.0142 25.889 17.4214 26.4819 16.6901 26.4819C15.9589 26.4819 15.3661 25.889 15.3661 25.1578V13.2411Z" fill="#FF6C00"/>
+                                    <path d="M20.6624 3.97252C20.6624 3.24125 21.2552 2.64844 21.9865 2.64844C22.7177 2.64844 23.3105 3.24125 23.3105 3.97252V25.1578C23.3105 25.889 22.7177 26.4819 21.9865 26.4819C21.2552 26.4819 20.6624 25.889 20.6624 25.1578V3.97252Z" fill="#FF6C00"/>
+                                    <path d="M25.9587 14.5651C25.9587 13.8339 26.5515 13.2411 27.2828 13.2411C28.014 13.2411 28.6069 13.8339 28.6069 14.5651V25.1578C28.6069 25.889 28.014 26.4819 27.2828 26.4819C26.5515 26.4819 25.9587 25.889 25.9587 25.1578V14.5651Z" fill="#FF6C00"/>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-modal__product">
+                    <div class="catalog-modal__product-left">
+                        <div class="catalog-card__badges">
+                            <div class="catalog-card__badge catalog-card__badge--blue">Лидер продаж</div>
+                            <div class="catalog-card__badge catalog-card__badge--orange">Новинка</div>
+                        </div>
+                        <div class="catalog-card__top">
+                            <div class="catalog-card__images">
+                                <div class="catalog-card__img catalog-card__img--active" data-tab-path="1">
+                                    <img src="img/card2.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="2">
+                                    <img src="img/product.webp" alt="">
+                                </div>
+                                <div class="catalog-card__img" data-tab-path="3">
+                                    <img src="img/card3.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="catalog-card__pag">
+                                <button class="catalog-card__pag-item catalog-card__pag-item--active" data-tab-path="1"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="2"></button>
+                                <button class="catalog-card__pag-item" data-tab-path="3"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-modal__product-right">
+                        <a href="" class="catalog-modal__product-title">Труба металлопластиковая Tiemme Al-Cobrapex 16х2 (0600010) 1 пог.м</a>
+                        <div class="catalog-modal__prices">
+                            <div class="catalog-modal__price">
+                                23 390 ₽
+                                <span>/ шт</span>
+                            </div>
+                        </div>
+                        <div class="catalog-modal__cart-bottom">
+                            <button class="catalog-modal__add btn btn-primary">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0007 2.70801V17.2913M2.70898 9.99967H17.2923" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>В комплект</span>
+                            </button>
+                            <div class="catalog-modal__cart-buttons">
+                                <button class="catalog-modal__cart-btn btn catalog-modal__cart-favourite"></button>
+                                <button class="catalog-modal__cart-btn btn">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.77344 18.5374C4.77344 17.8061 5.36625 17.2133 6.09752 17.2133C6.82878 17.2133 7.4216 17.8061 7.4216 18.5374V25.1578C7.4216 25.889 6.82878 26.4819 6.09752 26.4819C5.36625 26.4819 4.77344 25.889 4.77344 25.1578V18.5374Z" fill="#FF6C00"/>
+                                    <path d="M10.0698 6.62067C10.0698 5.88941 10.6626 5.2966 11.3938 5.2966C12.1251 5.2966 12.7179 5.88941 12.7179 6.62067V25.1578C12.7179 25.889 12.1251 26.4819 11.3938 26.4819C10.6626 26.4819 10.0698 25.889 10.0698 25.1578V6.62067Z" fill="#FF6C00"/>
+                                    <path d="M15.3661 13.2411C15.3661 12.5098 15.9589 11.917 16.6901 11.917C17.4214 11.917 18.0142 12.5098 18.0142 13.2411V25.1578C18.0142 25.889 17.4214 26.4819 16.6901 26.4819C15.9589 26.4819 15.3661 25.889 15.3661 25.1578V13.2411Z" fill="#FF6C00"/>
+                                    <path d="M20.6624 3.97252C20.6624 3.24125 21.2552 2.64844 21.9865 2.64844C22.7177 2.64844 23.3105 3.24125 23.3105 3.97252V25.1578C23.3105 25.889 22.7177 26.4819 21.9865 26.4819C21.2552 26.4819 20.6624 25.889 20.6624 25.1578V3.97252Z" fill="#FF6C00"/>
+                                    <path d="M25.9587 14.5651C25.9587 13.8339 26.5515 13.2411 27.2828 13.2411C28.014 13.2411 28.6069 13.8339 28.6069 14.5651V25.1578C28.6069 25.889 28.014 26.4819 27.2828 26.4819C26.5515 26.4819 25.9587 25.889 25.9587 25.1578V14.5651Z" fill="#FF6C00"/>
+                                </svg>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal-backdrop show"></div> -->

@@ -1,0 +1,88 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Мой кабинет", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Мой кабинет</a>
+                    <span class="breadcrumbs__item">Личная информация</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='cabinet'>
+                <div class='container'>
+                    <div class='cabinet__inner'>
+                        <aside class="cabinet__sidebar">
+                            @@include('components/cabinet-components/_cabinet-sidebar.html')
+                        </aside>
+                        <main class="cabinet__right">
+                            <h1 class="cabinet__title display3">Просмотренное</h1>
+
+                            <div class="user-view">
+
+                                <div class="user-view__top">
+
+
+                                    <div class="user-view__items">
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"true","discount":"true"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"true", "status":"img/has-grey.svg","statusText":"Под заказ","sale":"false","discount":"false"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"false","discount":"true"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"true","discount":"true"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"true", "status":"img/has-grey.svg","statusText":"Под заказ","sale":"false","discount":"false"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"false","discount":"true"})
+                                        </div>
+                                        <div class="user-view__item">
+                                            @@include('components/cards/_catalog-card.html',{"deleteBtn":"true","favourite": "false", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>

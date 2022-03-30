@@ -1,0 +1,328 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Главная", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+
+        <main class="content">
+
+            <section class='main-banners'>
+                <div class='container'>
+                    <div class='main-banners__inner'>
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/1.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/2.webp" alt="">
+                                    </a>
+                                </div>
+                                <div class='swiper-slide'>
+                                    <a class="main-banners__item" href="">
+                                        <img src="img/1.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class='swiper-button-prev'>
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class='swiper-button-next'>
+                                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L8 8L1 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class='swiper-pagination'></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-block'>
+                <div class='container'>
+                    <div class='catalog-block__top'>
+                        <p class="catalog-block__title display3">Последние просмотренные товары</p>
+                        <a href="" class="catalog-block__link btn text-link">Больше товаров</a>
+                    </div>
+                    @@include('components/catalog-components/_catalog-slider.html')
+                </div>
+            </section>
+
+            <section class='popular tab-parent'>
+                <div class='container'>
+                    <p class="popular__title display3">Популярные категории</p>
+                    <div class='popular__tabs tabs'>
+                        <div class="tabs__wrap">
+                            <div class="tab tab--active" data-tab-path="1">Инженерная сантехника</div>
+                            <div class="tab" data-tab-path="2">Бытовая сантехника</div>
+                        </div>
+                    </div>
+                    <div class="popular__content">
+                        <div class="tab__content tab__content--active" data-tab-path="1">
+                            <div class="popular__grid">
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular.webp","text":"Баки расширительные"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular2.webp","text":"Котельное оборудование"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular3.webp","text":"Фитинги для труб"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular4.webp","text":"Трубы и шланги"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular5.webp","text":"Фильтры и обратные клапана"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular6.webp","text":"Запорная арматура"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular7.webp","text":"Приборы учета"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular8.webp","text":"Коллекторы и коллекторные группы"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular9.webp","text":"Насосное оборудование"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular10.webp","text":"Крепежи и герметики"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular11.webp","text":"Инструмент сантехнический"})
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab__content" data-tab-path="2">
+                            <div class="popular__grid">
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular12.webp","text":"Ванны"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular13.webp","text":"Душевые кабины"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular14.webp","text":"Раковины"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular15.webp","text":"Смесители"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular16.webp","text":"Унитазы"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular17.webp","text":"Инсталляции"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular18.webp","text":"Биде и писсуары"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular19.webp","text":"Мойки для кухни"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular20.webp","text":"Аксессуары для ванной комнаты"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular21.webp","text":"Сантехника для детей"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular22.webp","text":"Сантехника для людей с ограниченными"})
+                                </a>
+                                <a href="" class="popular__item">
+                                    @@include('components/cards/_popular-card.html',{"img":"img/popular23.webp","text":"Готовые комплекты для ванной комнаты"})
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-block'>
+                <div class='container'>
+                    <div class='catalog-block__top'>
+                        <p class="catalog-block__title display3">Лидеры продаж</p>
+                        <a href="" class="catalog-block__link btn text-link">Больше товаров</a>
+                    </div>
+                    @@include('components/catalog-components/_catalog-slider.html')
+                </div>
+            </section>
+
+            <section class='promo-block'>
+                <div class='container'>
+                    <div class='promo-block__top'>
+                        <p class="catalog-block__title display3">Акции и скидки</p>
+                        <a href="" class="catalog-block__link btn text-link">Перейти к акциям</a>
+                    </div>
+                    <div class="promo-block__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo.webp","title":"Скидки на мебель и сантехнику STWORKI","desc":"Скидки до 25% на сантехнику и мебель бренда STWORKI."})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo2.webp","title":"Vitra со скидками до 45%","desc":"Эксклюзивная сантехника Vitra. В подборке раковины, унитазы и ванны."})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo3.webp","title":"До -40% Ideal Standard","desc":"Унитазы и акриловые ванны по привлекательным ценам."})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo4.webp","title":"Акриловые ванны со скидкой","desc":"Стильные, легкие, функциональные — акриловые ванны со скидками до 60%"})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo.webp","title":"Скидки на мебель и сантехнику STWORKI","desc":"Скидки до 25% на сантехнику и мебель бренда STWORKI."})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_promo-card.html',{"img":"img/promo2.webp","title":"Vitra со скидками до 45%","desc":"Эксклюзивная сантехника Vitra. В подборке раковины, унитазы и ванны."})
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-button-prev'>
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1L1 8L8 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L8 8L1 15" stroke="#FF6C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-block'>
+                <div class='container'>
+                    <div class='catalog-block__top'>
+                        <p class="catalog-block__title display3">Распродажа</p>
+                        <a href="" class="catalog-block__link btn text-link">Больше товаров</a>
+                    </div>
+                    @@include('components/catalog-components/_catalog-slider.html')
+                </div>
+            </section>
+
+            <section class='follow'>
+                <div class='container'>
+                    <div class='follow__inner'>
+                        <div class="follow__left">
+                            <img src="img/follow.webp" alt="">
+                        </div>
+                        <div class="follow__right">
+                            <h1 class="follow__title display1">Подпишись на скидки и рекомендации</h1>
+                            <p class="follow__desc">Только самое полезное и без спама!</p>
+                            <form action="" class="follow__form">
+                                <fieldset class='follow__form-group form-group'>
+                                    <input type='text' placeholder="Электронная почта" />
+                                </fieldset>
+                                <button class="follow__btn btn btn-primary">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='brands'>
+                <div class='container'>
+                    <div class='brands__inner'>
+                        <div class="brands__left">
+                            <p class="brands__title display1">
+                                Сотрудничаем <br> более чем с 200 брендами
+                            </p>
+                            <p class="brands__desc">Cантехники и аксесуаров для ванной со всего мира</p>
+                            <a href="" class="brands__btn btn btn-primary">Перейти в каталог</a>
+                        </div>
+                        <div class="brands__right">
+                            <div class="brands__items">
+                                <a href="" class="brands__item">
+                                    <img src="img/brands.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands2.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands3.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands4.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands5.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands6.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands7.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands8.webp" alt="">
+                                </a>
+                                <a href="" class="brands__item">
+                                    <img src="img/brands9.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='catalog-block'>
+                <div class='container'>
+                    <div class='catalog-block__top'>
+                        <p class="catalog-block__title display3">Новинки</p>
+                        <a href="" class="catalog-block__link btn text-link">Больше товаров</a>
+                    </div>
+                    @@include('components/catalog-components/_catalog-slider.html')
+                </div>
+            </section>
+
+            <section class='text-block'>
+                <div class='container'>
+                    <h3>Интернет-магазин инженерной и бытовой сантехники в Санкт-Петербурге и Ленинградской области</h3>
+                    <p>Обращаем ваше внимание! В связи с нестабильностью курса валют и постоянным изменением цен от поставщиков - цены, указанные на сайте, носят ознакомительный характер и не являются публичной офертой (согласно статьи 437(2) Гражданского
+                        кодекса РФ). Пожалуйста, уточняйте окончательную стоимость товара у менеджера.</p>
+                    <p>Интернет-магазин сантехники «Сан Саныч» предлагает в Санкт-Петербурге и Ленинградской области широкий выбор бытовой сантехники и комплектующих для инженерных коммуникаций.</p>
+                    <p>У нас широко представлена сантехника российских и зарубежных производителей (Тритон, Jacob Delafon, Grohe, Hansgrohe, Ravak, Jika и многих других) в широком ценовом диапазоне. Вы также сможете приобрести весь спектр необходимой инженерной
+                        сантехники ведущих производителей: Tiemme, Geberit, Elextrolux, AlcaPlast, Henco, Wats и др.</p>
+                    <p>Вы можете купить сантехнику как в нашем интернет-магазине, по телефону или оформив онлайн-заказ, так и в сети наших магазинов, расположенных во всех районах города. В нашем магазине регулярно проводятся различные акции и распродажи
+                        сантехники, позволяя вам совершать выгодные покупки!</p>
+                    <p>Помимо товаров, представленных на нашем сайте, мы можем доставить любые сантехнические изделия по вашему индивидуальному заказу. Для индивидуального заказа обращайтесь к менеджерам нашего магазина.</p>
+                    <p>Приобрести сантехнику в нашем интернет-магазине вы сможете как за наличный так и за безналичный расчет, оптом и в розницу. Осуществляется доставка товара по Санкт-Петербургу и Ленинградской области.</p>
+                </div>
+            </section>
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_scripts.html')
+</body>
+
+</html>

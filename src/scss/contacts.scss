@@ -1,0 +1,286 @@
+@import 'vars';
+.contacts {
+    padding: 45px 0;
+    &__inner {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        margin-top: 32px;
+        gap: 96px 35px;
+    }
+    &__left {
+        width: 625px;
+        margin-right: 35px;
+        flex-shrink: 0;
+    }
+    &__right {
+        width: calc(100% - 660px);
+    }
+    &__map {
+        width: 100%;
+        height: 490px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__shops {
+        width: calc(100% + 24px);
+        margin-left: -24px;
+        height: 490px;
+        overflow-y: auto;
+        padding-right: 10px;
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #E7E9EB;
+            border-radius: 100px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $primary;
+            border-radius: 100px;
+        }
+    }
+    &__requisite {
+        padding-right: 15px;
+        &-items {
+            margin-top: 32px;
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            span {
+                color: #AAAAAA;
+            }
+        }
+    }
+    &__form {
+        &-tabs {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+        }
+        &-radio {
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+        &-content {
+            display: none;
+            margin-top: 30px;
+            &--active {
+                display: block;
+            }
+        }
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        &-full {
+            grid-column: 1/3;
+        }
+        textarea {
+            height: 172px;
+        }
+        &-file {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            background-color: $secondary;
+            padding: 0 24px;
+            border-radius: 10px;
+            font-size: 14px;
+            line-height: 140%;
+            position: relative;
+            input {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+            label {
+                color: #3B6D9A;
+            }
+        }
+        &-btn {
+            border-radius: 10px;
+            height: 52px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        &-check {
+            a {
+                color: #3B6D9A;
+            }
+        }
+    }
+}
+
+.shop {
+    padding: 0 24px;
+    border-radius: 20px;
+    &:nth-child(even) {
+        background: #FBFAFA;
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        img {
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+    }
+    &__bottom {
+        display: flex;
+        margin-top: 19px;
+    }
+    &__right,
+    &__left {
+        width: 50%;
+    }
+    &__address {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        max-width: 230px;
+    }
+    &__metro {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 140%;
+        svg {
+            margin-right: 12px;
+        }
+    }
+    &__phones {
+        margin-top: 21px;
+    }
+    &__phone {
+        display: block;
+        font-size: 14px;
+        line-height: 140%;
+        &:hover {
+            color: $primary;
+        }
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+    &__time {
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 600;
+        span {
+            color: $grey;
+            font-weight: 400;
+        }
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+    &__email {
+        display: block;
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 36px;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts {
+        &__form {
+            &-grid {
+                gap: 30px 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contacts {
+        &__inner {
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+        &__shops {
+            height: unset;
+            padding-right: 0;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contacts {
+        padding: 36px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__map {
+            height: 300px;
+        }
+        &__form {
+            &-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            &-full {
+                grid-column: 1/2;
+            }
+        }
+    }
+    .shop {
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts {
+        &__form {
+            &-tabs {
+                display: block;
+            }
+            &-radio {
+                &:not(:last-child) {
+                    margin: 0 0 15px;
+                }
+            }
+        }
+    }
+    .shop {
+        &__bottom {
+            display: block;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+            margin-top: 20px;
+        }
+        &__address {
+            max-width: 100%;
+        }
+    }
+}

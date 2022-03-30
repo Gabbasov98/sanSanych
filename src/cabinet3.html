@@ -1,0 +1,118 @@
+<!DOCTYPE html> @@include('components/_head.html',{ "lang":"en", "title":"Мой кабинет", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/_header.html')
+        </header>
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrap">
+                    <a href="" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Мой кабинет</a>
+                    <span class="breadcrumbs__item">Личная информация</span>
+                </div>
+            </div>
+
+        </div>
+        <main class="content">
+
+
+            <section class='cabinet'>
+                <div class='container'>
+                    <div class='cabinet__inner'>
+                        <aside class="cabinet__sidebar">
+                            @@include('components/cabinet-components/_cabinet-sidebar.html')
+                        </aside>
+                        <main class="cabinet__right">
+                            <h1 class="cabinet__title display3">Избранное</h1>
+
+                            <div class="user-favourite">
+
+                                <div class="user-favourite__top">
+                                    <div class="filter-tags">
+                                        <div class="filter-tags__title">Категории:</div>
+                                        <div class="filter-tags__wrap">
+                                            <div class="filter-tags__item">
+                                                <span>Унитазы 
+                                                    <span class="grey-text">(5)</span>
+                                                </span>
+                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="filter-tags__item">
+                                                <span>Инсталяции 
+                                                    <span class="grey-text">(1)</span>
+                                                </span>
+                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="filter-tags__item">
+                                                <span>Душевые кабины 
+                                                    <span class="grey-text">(1)</span>
+                                                </span>
+                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="filter-tags__item">
+                                                <span>Фитинги 
+                                                    <span class="grey-text">(1)</span>
+                                                </span>
+                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <div class="filter-tags__item">
+                                                <span>Трубы 
+                                                    <span class="grey-text">(2)</span>
+                                                </span>
+                                                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 0.75L8.5 8.25M8.5 0.75L1 8.25" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <button class="filter-tags__clear text-btn">Удалить всё избранное </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-favourite__items">
+                                    <div class="user-favourite__item">
+                                        @@include('components/cards/_catalog-card.html',{"deleteBtn":"false","favourite": "true", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"true","discount":"true"})
+                                    </div>
+                                    <div class="user-favourite__item">
+                                        @@include('components/cards/_catalog-card.html',{"deleteBtn":"false","favourite": "true", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"true", "status":"img/has-grey.svg","statusText":"Под заказ","sale":"false","discount":"false"})
+                                    </div>
+                                    <div class="user-favourite__item">
+                                        @@include('components/cards/_catalog-card.html',{"deleteBtn":"false","favourite": "true", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                    </div>
+                                    <div class="user-favourite__item">
+                                        @@include('components/cards/_catalog-card.html',{"deleteBtn":"false","favourite": "true", "sizes":"false", "popular":"false", "newProduct":"false","topSale":"false", "winSale":"true", "status":"img/clock.svg","statusText":"Недоступно","sale":"false","discount":"true"})
+                                    </div>
+                                    <div class="user-favourite__item">
+                                        @@include('components/cards/_catalog-card.html',{"deleteBtn":"false","favourite": "true", "sizes":"false", "popular":"false", "newProduct":"true", "topSale":"false", "winSale":"false", "status":"img/has.svg","statusText":"В наличии","sale":"false","discount":"false"})
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer class='footer'>
+                @@include('components/_footer.html')
+            </footer>
+    </div>
+    <!--  -->
+    @@include('components/header-components/_header-popups.html')
+    <!--  -->
+    @@include('components/_popups.html') @@include('components/_scripts.html')
+</body>
+
+</html>
