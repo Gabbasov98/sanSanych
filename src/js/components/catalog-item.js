@@ -108,7 +108,7 @@ $(document).ready(function() {
     var canvas = document.getElementById('canvas');
 
     if (canvas) {
-        var url = '../../img/bonus.svg';
+        var url = '../img/bonus.svg';
 
         var ctx = canvas.getContext('2d');
         var img = new Image();
