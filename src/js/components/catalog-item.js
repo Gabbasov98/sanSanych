@@ -107,7 +107,6 @@ $(document).ready(function() {
 
     var canvas = document.getElementById('canvas');
     var rootContext = document.body.getAttribute("data-root");
-    console.log(rootContext)
     if (canvas) {
         var url = 'img/bonus.svg';
 
@@ -181,7 +180,6 @@ $(document).ready(function() {
         function canvasLeave(e) {
 
             if (isPress) {
-                console.log(e)
                 var x = e.offsetX;
                 var y = e.offsetY;
                 ctx.globalCompositeOperation = 'destination-out';
