@@ -106,9 +106,10 @@ $(document).ready(function() {
 
 
     var canvas = document.getElementById('canvas');
-
+    var rootContext = document.body.getAttribute("data-root");
+    console.log(rootContext)
     if (canvas) {
-        var url = '../img/bonus.svg';
+        var url = 'img/bonus.svg';
 
         var ctx = canvas.getContext('2d');
         var img = new Image();
