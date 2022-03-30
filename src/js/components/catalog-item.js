@@ -125,11 +125,34 @@ $(document).ready(function() {
 
         var isPress = false;
         var old = null;
+
+
+        canvas.addEventListener('touchstart', function(e) {
+            canvasClick(e)
+        });
+        canvas.addEventListener('touchmove', function(e) {
+            canvasLeave(e)
+        });
+        canvas.addEventListener('touchend', function(e) {
+            canvasUnClick(e)
+        });
+
         canvas.addEventListener('mousedown', function(e) {
-            isPress = true;
-            old = { x: e.offsetX, y: e.offsetY };
+            canvasClick(e)
         });
         canvas.addEventListener('mousemove', function(e) {
+            canvasLeave(e)
+        });
+        canvas.addEventListener('mouseup', function(e) {
+            canvasUnClick(e)
+        });
+
+        function canvasClick(e) {
+            isPress = true;
+            old = { x: e.offsetX, y: e.offsetY };
+        }
+
+        function canvasLeave(e) {
             if (isPress) {
                 var x = e.offsetX;
                 var y = e.offsetY;
@@ -148,10 +171,11 @@ $(document).ready(function() {
                 old = { x: x, y: y };
 
             }
-        });
-        canvas.addEventListener('mouseup', function(e) {
+        }
+
+        function canvasUnClick(e) {
             isPress = false;
-        });
+        }
     }
 
 
