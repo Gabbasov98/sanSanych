@@ -133,6 +133,7 @@ $(document).ready(function() {
             isPress = true;
             old = { x: e.offsetX, y: e.offsetY };
         }, false);
+
         canvas.addEventListener('touchmove', function(e) {
             e.preventDefault();
             if (isPress) {
@@ -157,6 +158,7 @@ $(document).ready(function() {
 
             }
         }, false);
+
         canvas.addEventListener('touchend', function(e) {
             canvasUnClick(e)
         }, false);
