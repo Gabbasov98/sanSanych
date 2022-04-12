@@ -130,31 +130,14 @@ $(document).ready(function() {
         canvas.addEventListener('touchstart', function(e) {
             e.preventDefault();
             isPress = true;
-            old = { x: e.offsetX, y: e.offsetY };
+            old = { x: e.touches[0].screenX, y: e.touches[0].screenY };
+            console.log(old)
         }, false);
 
         canvas.addEventListener('touchmove', function(e) {
             e.preventDefault();
             if (isPress) {
-                var x = e.touches.screenX;
-                var y = e.touches.screenY;
-                ctx.globalCompositeOperation = 'destination-out';
-                console.log()
-
-                ctx.beginPath();
-                ctx.arc(x, y, 10, 0, 2 * Math.PI);
-                ctx.fill();
-
-                ctx.lineWidth = 40;
-                ctx.beginPath();
-                ctx.moveTo(old.x, old.y);
-                ctx.lineTo(x, y);
-                ctx.stroke();
-
-                old = { x: x, y: y };
-
                 ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-
             }
         }, false);
 
