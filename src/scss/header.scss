@@ -151,6 +151,7 @@
 }
 
 .header-top {
+    overflow: unset;
     &__inner {
         display: flex;
         align-items: center;
@@ -186,6 +187,7 @@
 
 .header-bottom {
     position: relative;
+    overflow: unset;
     &__inner {
         display: flex;
         align-items: center;
